@@ -87,7 +87,7 @@ After completing database set up and configuration: running `tables.sql` and act
     │   └── Views
     └── iOSApp.xcodeproj
         ├── project.xcworkspace
-            ├── xcshareddata
+            └── xcshareddata
                 └── swiftpm
                     └── configuration
 ```
@@ -102,7 +102,7 @@ After completing database set up and configuration: running `tables.sql` and act
 - iOS app error propagation for 400/500 status codes
 
 ## Missing features 🫠:
-- No refresh endpoints
-- PUT to update account not implemented
+- No JWT refresh endpoints
+- PUT method to update account data was not implemented
 - Storing token for persistent login w/ CoreData
-- HTTP server (this was done for development purposes)
+- HTTPs server (HTTP was chosen for development purposes)
