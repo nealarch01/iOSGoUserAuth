@@ -19,6 +19,9 @@ User authentication full stack application created in Swift and Go (Golang) usin
 - [Missing Features](#missing-features-🫠)
 
 ## Video
+https://user-images.githubusercontent.com/73256760/209417784-0bb07f94-495a-4c5e-be82-87fd9233bba8.mov
+
+
 
 ## Tech Stack
 ### Frontend (iOS Application)
