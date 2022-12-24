@@ -44,6 +44,11 @@ func UpdateAccount(w http.ResponseWriter, r *http.Request) {
 func DeleteAccount(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	tokenString := r.Header.Get("Authorization")
+	if tokenString == "" {
+		w.WriteHeader(http.StatusUnauthorized)
+		w.Write([]byte(`{"message": "Unauthorized"}`))
+		return
+	}
 	accountID := auth.GetAccountID(tokenString)
 	if err := models.DeleteAccount(accountID); err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
