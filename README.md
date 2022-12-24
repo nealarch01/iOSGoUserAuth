@@ -60,7 +60,37 @@ After completing database set up and configuration: running `tables.sql` and act
 
 
 ## Directory Structure
-
+```
+.
+├── auth-server
+│   └── api
+│       ├── auth
+│       ├── controllers
+│       ├── database
+│       ├── middlewares
+│       ├── models
+│       ├── routes
+│       └── utils
+├── database-setup
+└── iOSApp
+    ├── iOSApp
+    │   ├── Assets.xcassets
+    │   │   ├── AccentColor.colorset
+    │   │   └── AppIcon.appiconset
+    │   ├── Components
+    │   ├── Extensions
+    │   ├── Models
+    │   ├── Preview Content
+    │   │   └── Preview Assets.xcassets
+    │   ├── Services
+    │   ├── ViewModels
+    │   └── Views
+    └── iOSApp.xcodeproj
+        ├── project.xcworkspace
+            ├── xcshareddata
+                └── swiftpm
+                    └── configuration
+```
 
 ## Features 🔥
 - Login / Register 
