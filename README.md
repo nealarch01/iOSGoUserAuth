@@ -10,7 +10,7 @@ User authentication full stack application created in Swift and Go (Golang) usin
 ## Table of Contents:
 - [Video](#video)
 - [Technology Stack](#tech-stack)
-- [Installation](#installation)
+- [Installation/Configuration](#installationconfigration)
   - [Database](#setting-up-the-database)
   - [REST API](#rest-api-setup--configuration)
   - [iOS App](#ios-app-setup)
@@ -37,7 +37,7 @@ https://user-images.githubusercontent.com/73256760/209417784-0bb07f94-495a-4c5e-
 ### Database
 - PostgreSQL
 
-## Installation:
+## Installation/Configration:
 Make sure you have all dependencies: XCode, Go, PostgreSQL (Preferrably version 15+)
 
 ### Database Setup:
@@ -47,7 +47,7 @@ Make sure you have all dependencies: XCode, Go, PostgreSQL (Preferrably version 
     - Example: `psql -p 5432 -f tables.sql`
 
 ### REST API Setup & Configuration
-After completing database set up and configuration: running `tables.sql` and activating the server instance. You will need to modify  `./authserver/api/database/connection.go`
+After completing database set up and configuration: running `tables.sql` and activating the server instance. You will need to modify  `./auth-server/api/database/connection.go`
 - In this file is a connection string. You will most likely have to change this if your PostgreSQL instance have a different name, host, password, etc
 
 - After completing the steps above, you can run main.go, example: `go run main.go`. Or, build it into an executable and then run it, example: `go build main.go && ./main`
@@ -104,5 +104,5 @@ After completing database set up and configuration: running `tables.sql` and act
 ## Missing features 🫠:
 - No JWT refresh endpoints
 - PUT method to update account data was not implemented
-- Storing token for persistent login w/ CoreData
+- Storing token for persistent login w/ CoreData/UserDefaults
 - HTTPs server (HTTP was chosen for development purposes)
